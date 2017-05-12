@@ -1,0 +1,63 @@
+html,
+body,
+div,
+img {
+	margin:0;
+	padding: 0;
+}
+.game {
+	overflow: hidden;
+	position: relative;
+	width: 320px;
+	height:568px;
+	background: url(../imgs/start-bg.png);
+	margin:100px auto 0;
+}
+.game .start {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left:60px;
+	top:400px;
+	border:3px solid #666;
+	border-radius: 13px;
+	color:#666;
+	font-size: 28px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+.game .score,
+.game .life,
+.game > img {
+	position: absolute;
+}
+.game .score {
+	display: none;
+	left:10px;
+	top:10px; 
+}
+.game .life {
+	display: none;
+	width: 80px;
+	right:10px;
+	top:10px;
+}
+.game img {
+	left:0;
+	top:0;
+}
+.game .filter {
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	width: 100%;
+	height:100%;
+	color: #fff;
+	font-size: 46px;
+	text-align: center;
+	letter-spacing: 5px;
+	line-height: 568px;
+	background: #000;
+	opacity: 0.5;
+}
